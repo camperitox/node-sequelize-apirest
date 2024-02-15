@@ -24,8 +24,8 @@ export const Project = sequelize.define('project', {
 
 // Creamos las relaciones entre las tablas
 
-Project.hasMany(Task, 
-    {foreignKey: 'projectId', 
+Project.hasMany(Task, {
+    foreignKey: 'projectId', 
     sourceKey: 'id'
 });
 
